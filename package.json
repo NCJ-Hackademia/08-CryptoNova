@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "dotenv": "^17.2.1"
-  },
-  "scripts": {
-    "start": "concurrently \"cd Ai_Service && venv\\Scripts\\activate && uvicorn main:app --host 0.0.0.0 --port %AI_PORT%\" \"cd server && node index.js\" \"cd frontend && npm start\""
-  }
-}
