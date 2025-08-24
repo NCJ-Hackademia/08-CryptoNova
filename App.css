@@ -1,0 +1,86 @@
+
+
+.intro-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2c2c2c, #3f3f3f);
+  color: white;
+  text-align: center;
+}
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;         /* Full height */
+  width: 100vw;          /* Full width */
+  background: linear-gradient(135deg, #1f1f1f, #2c2c2c);
+  margin: 0;
+  padding: 0;
+}
+
+
+.result-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.score-text {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.success-msg {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.typewriter {
+  display: inline-block; /* ✅ keeps it only as wide as text */
+  overflow: hidden;
+  border-right: .15em solid #4CAF50;
+  white-space: nowrap;
+  letter-spacing: .05em;
+  animation: typing 2.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* Adjust width to match character count (20ch = 20 characters) */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 26ch; } /* ✅ match your text length exactly */
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #4CAF50; }
+}
+
+
+.tagline {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.start-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #45a049;
+}
